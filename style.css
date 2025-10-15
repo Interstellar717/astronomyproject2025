@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: MSR;
+    src: url('https://interstellar717.github.io/random-pokemon/assets/fonts/msr.woff2');
+}
+
+.msr {
+    font-family: "MSR";
+}
+
+* {
+    transition: 0.5s all;
+    color: white;
+    font-family: "Exo 2";
+}
+
+/* *:hover {
+    border: solid white 3px;
+} */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    align-content: center;
+    overflow: hidden;
+}
+
+.page-link-img-container {
+    margin: auto;
+    width: 35vw;
+    height: fit-content;
+    padding: 10px 50px;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    animation: fade-in-bottom 1s;
+    position: relative;
+
+    /* DO SOMETHING WITH A BACKGROUND ANIMATION */
+}
+
+@keyframes fade-in-bottom {
+    from {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0vh);
+        opacity: 1;
+    }
+}
+
+.page-link-img {
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    border: 5px solid;
+    border-radius: 2vw;
+    display: inline-block;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+div.transparent-info-box {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), transparent);
+    width: 98.5%;
+    height: 35vh;
+    padding-top: 40vh;
+    padding-left: 1.5%;
+    animation: fade-in-bottom 1s;
+    font-size: 1.4vw;
+    z-index: -100;
+}
+
+div.transparent-info-box p.info-p {
+    width: 97vw;
+    height: 22vh;
+}
+
+div.side-info {
+    width: 30vw;
+    height: fit-content;
+    position: absolute;
+    top: 10vh;
+    top: 0;
+}
+
+div.side-info.left {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), transparent);
+    left: 0;
+    padding-left: 1.5%;
+    text-align: left;
+}
+
+
+div.side-info.right {
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0.5), transparent);
+    right: 0;
+    padding-right: 1.5%;
+    text-align: right;
+}
+
+div.side-info img {
+    width: 100%;
+    position: absolute;
+}
+
+div.side-info.left img {
+    left: 0;
+}
+
+div.side-info.right img {
+    right: 0;
+}
+
+.home {
+    position: absolute;
+    top: 1vh;
+    left: 1vh;
+    background: transparent;
+    border-radius: 10px;
+    width: 50px;
+    aspect-ratio: 1 / 1;
+    border: solid white 3px;
+    font-size: 26px;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.quiz-link {
+    width: 150px;
+    aspect-ratio: 1 / 1;
+    border: 5px solid;
+    border-radius: 2vw;
+    display: inline-block;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+div#video-display {
+    width: 42vw;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 2vw;
+    position: absolute;
+    top: calc(50vh - (50vh / 2) - 3% - 5%);
+    left: calc(50vw - (42vw / 2) - 2%);
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    padding: 3% 2%;
+    display: none;
+    opacity: 0;
+}
+
+div#video-display button#close-video-display {
+    line-height: 0;
+    text-align: center;
+    align-content: center;
+    color: black;
+    border: solid black 2px;
+    width: fit-content;
+    aspect-ratio: 1 / 1;
+    border-radius: 10%;
+    background-color: transparent;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+div#video-display iframe {
+    width: 90%;
+    height: 90%;
+    border-radius: inherit;
+}

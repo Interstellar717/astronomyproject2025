@@ -80,7 +80,6 @@ div.transparent-info-box {
     padding-left: 1.5%;
     animation: fade-in-bottom 1s;
     font-size: 1.4vw;
-    z-index: -100;
 }
 
 div.transparent-info-box p.info-p {
@@ -114,6 +113,7 @@ div.side-info.right {
 div.side-info img {
     width: 100%;
     position: absolute;
+    z-index: 100;
 }
 
 div.side-info.left img {
